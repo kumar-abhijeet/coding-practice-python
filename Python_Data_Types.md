@@ -73,13 +73,28 @@ for N in [2,3,5,7]:
 # output: 2 3 5 7
 ```
 
-#### break and continue: Fine-tuning your loops
+---
+
+### while loops
+
+```
+i = 0
+while i < 10:
+  print(i, end = ' ')
+  i += 1
+
+# output: 0 1 2 3 4 5 6 7 8 9
+```
+
+---
+
+##### break and continue: Fine-tuning your loops
 
 * break - exit loop (breaks out of the loop entirely)
 * continue - skip iteration (skips remainder of current loop, goes to next iteration)
 * pass - do nothing (acts as a placeholder, often when you begin coding)
 
-### Loops with an `else` block (like a nobreak statement)
+##### Loops with an `else` block (like a nobreak statement)
 
  `else` block is executed only if the loop ends naturally, without encountering a `break` statement
 
@@ -102,18 +117,86 @@ print(L)
 
 ---
 
-### while loops
+### Defining Functions
+
+Defining Functions
 
 ```
-i = 0
-while i < 10:
-  print(i, end = ' ')
-  i += 1
+def fibonacci(N):
 
-# output: 0 1 2 3 4 5 6 7 8 9
+  L = []
+  a, b = 0, 1
+
+  while len(L) < N:
+    a, b = b, a+b
+    L.append(a)
+
+  return L
 ```
 
----
+Using Functions
+
+```
+fibonacci(10)
+
+[1,1,2,3,5,8,13,21,34,55]
+```
+
+Functions can return any Python object, simple or compound 
+
+Multiple Return Values (put in a tuple)
+
+```
+# define the function
+def real_img_conj(val):
+  return val.real, val.imag, val.conjugate()
+
+# use the function
+r, i, c = real_img_conj(3 + 4j)
+print(r, i, c)
+
+#output: 3.0 4.0 (3-4j)
+```
+
+Default Argument values in Function
+
+```
+#define the function with default arg. values
+def fibonacci(N, a=0, b=1):
+  L = []
+
+  while len(L) < N:
+    a, b = b, a+b
+    L.append(a)
+
+  return L
+
+# use the function
+fibonacci(10)
+# output: [1,1,2,3,5,8,13,21,34,55]
+
+fibonacci(10,0,2)
+# output: [2,2,4,6,10,16,26,42,68,110]
+
+fibonacci(10,b=3,a=1)
+# output: [3,4,7,11,18,29,47,76,123,199]
+```
+
+
+*args and **kwargs: Flexible Arguments
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

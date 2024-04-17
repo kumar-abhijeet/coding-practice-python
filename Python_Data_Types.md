@@ -1,4 +1,4 @@
-Python has 12 primary built-in data types:
+## Python has 12 primary built-in data types:
 
 | Category | Name | Description | 
 | --- | --- | --- |
@@ -14,3 +14,47 @@ Python has 12 primary built-in data types:
 | Mapping | `dict` | Dictionary of key-value pairs |
 | Set | `set` | Mutable, unordered collection of unique items |
 |  | `frozenset` | Immutable set |
+
+Also, `decimal` and `fractions` module can be used for certain use cases:
+
+* `import decimal`
+* `import fractions`
+
+---
+
+## Modules for Data Structures and Algorithms 
+
+#### Collections
+
+`from collections import abc`
+
+| Datatype or operation | Description | 
+| --- | --- | 
+| `namedtuple()` | Creates tuple subclasses with named fields | 
+| `deque` | Lists with fast appends and pops either end | 
+| `ChainMap` | Dictionary like class to create a signle view of multiple mappings | 
+| `Counter` | Dictionary subclass for counting hasable objects | 
+| `OrderedDict` | Dictionary subclass that remembers the entry order | 
+| `defaultDict` | Dictionary subclass that calls a function to supply missing values | 
+| `UserDict`, `UserList`, `UserString` | These 3 data types are simply wrappers for their underlyuing base classes. Their use has largely been replaced by the ability to subclass their respective base classes directly. Can be used to access the underlying obect as an attribute | 
+
+
+
+
+
+| None | `None` | The null object |
+| Numeric | `int` | Integer |
+|  | `float` | Floating point number |
+
+
+
+
+
+
+
+
+
+
+
+
+

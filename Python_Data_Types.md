@@ -1,6 +1,16 @@
-Python has 11 primary built-in data types:
+Python has 12 primary built-in data types:
 
-* Numeric types: `int`, `float`, `complex`, `bool`
-* Sequence types: `str`, `list`, `tuple`, `range`
-* mapping type: `dict`
-* set type: `set`, `frozenset` 
+| Category | Name | Description | 
+| --- | --- | --- |
+| None | `None` | The null object |
+| Numeric | `int` | Integer |
+|  | `float` | Floating point number |
+|  | `complex` | Complex number |
+|  | `bool` | Boolean (True, False) |
+| Sequences | `str` | String of characters |
+|  | `list` | List of arbitrary objects |
+|  | `tuple` | Group of arbitrary items |
+|  | `range` | Creates a range of integers |
+| Mapping | `dict` | Dictionary of key-value pairs |
+| Set | `set` | Mutable, unordered collection of unique items |
+|  | `frozenset` | Immutable set |

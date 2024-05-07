@@ -185,7 +185,12 @@ fibonacci(10,b=3,a=1)
 
 *args and **kwargs: Flexible Arguments
 
+### enumerate
 
+```
+for index, word in enumerate(words):
+  print(index, word)
+```
 
 
 
